@@ -1,0 +1,4 @@
+C:\Users\richard\Documents\GitHub\AChartEngine.Xamarin\AChartEngine.Xamarin\bin\Debug\AChartEngine.Xamarin.dll
+C:\Users\richard\Documents\GitHub\AChartEngine.Xamarin\AChartEngine.Xamarin\bin\Debug\AChartEngine.Xamarin.pdb
+C:\Users\richard\Documents\GitHub\AChartEngine.Xamarin\AChartEngine.Xamarin\obj\Debug\AChartEngine.Xamarin.dll
+C:\Users\richard\Documents\GitHub\AChartEngine.Xamarin\AChartEngine.Xamarin\obj\Debug\AChartEngine.Xamarin.pdb
