@@ -8,180 +8,134 @@ namespace Org.Achartengine.Renderer {
 	[global::Android.Runtime.Register ("org/achartengine/renderer/XYSeriesRenderer", DoNotGenerateAcw=true)]
 	public partial class XYSeriesRenderer : global::Org.Achartengine.Renderer.SimpleSeriesRenderer {
 
-		// Metadata.xml XPath class reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine']"
-		[global::Android.Runtime.Register ("org/achartengine/renderer/XYSeriesRenderer$FillOutsideLine", DoNotGenerateAcw=true)]
-		public partial class FillOutsideLine : global::Java.Lang.Object, global::Java.IO.ISerializable {
-
-			// Metadata.xml XPath class reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']"
-			[global::Android.Runtime.Register ("org/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type", DoNotGenerateAcw=true)]
-			public sealed partial class Type : global::Java.Lang.Enum {
+		// Metadata.xml XPath class reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']"
+		[global::Android.Runtime.Register ("org/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type", DoNotGenerateAcw=true)]
+		public sealed partial class Type : global::Java.Lang.Enum {
 
 
-				static IntPtr ABOVE_jfieldId;
+			static IntPtr ABOVE_jfieldId;
 
-				// Metadata.xml XPath field reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/field[@name='ABOVE']"
-				[Register ("ABOVE")]
-				public static global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type Above {
-					get {
-						if (ABOVE_jfieldId == IntPtr.Zero)
-							ABOVE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "ABOVE", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-						IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, ABOVE_jfieldId);
-						return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type> (__ret, JniHandleOwnership.TransferLocalRef);
-					}
-					set {
-						if (ABOVE_jfieldId == IntPtr.Zero)
-							ABOVE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "ABOVE", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-						IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
-						JNIEnv.SetStaticField (class_ref, ABOVE_jfieldId, native_value);
-						JNIEnv.DeleteLocalRef (native_value);
-					}
+			// Metadata.xml XPath field reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/field[@name='ABOVE']"
+			[Register ("ABOVE")]
+			public static global::Org.Achartengine.Renderer.XYSeriesRenderer.Type Above {
+				get {
+					if (ABOVE_jfieldId == IntPtr.Zero)
+						ABOVE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "ABOVE", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+					IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, ABOVE_jfieldId);
+					return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.Type> (__ret, JniHandleOwnership.TransferLocalRef);
 				}
-
-				static IntPtr BELOW_jfieldId;
-
-				// Metadata.xml XPath field reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/field[@name='BELOW']"
-				[Register ("BELOW")]
-				public static global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type Below {
-					get {
-						if (BELOW_jfieldId == IntPtr.Zero)
-							BELOW_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BELOW", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-						IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, BELOW_jfieldId);
-						return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type> (__ret, JniHandleOwnership.TransferLocalRef);
-					}
-					set {
-						if (BELOW_jfieldId == IntPtr.Zero)
-							BELOW_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BELOW", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-						IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
-						JNIEnv.SetStaticField (class_ref, BELOW_jfieldId, native_value);
-						JNIEnv.DeleteLocalRef (native_value);
-					}
+				set {
+					if (ABOVE_jfieldId == IntPtr.Zero)
+						ABOVE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "ABOVE", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+					IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
+					JNIEnv.SetStaticField (class_ref, ABOVE_jfieldId, native_value);
+					JNIEnv.DeleteLocalRef (native_value);
 				}
-
-				static IntPtr BOUNDS_ABOVE_jfieldId;
-
-				// Metadata.xml XPath field reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/field[@name='BOUNDS_ABOVE']"
-				[Register ("BOUNDS_ABOVE")]
-				public static global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type BoundsAbove {
-					get {
-						if (BOUNDS_ABOVE_jfieldId == IntPtr.Zero)
-							BOUNDS_ABOVE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BOUNDS_ABOVE", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-						IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, BOUNDS_ABOVE_jfieldId);
-						return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type> (__ret, JniHandleOwnership.TransferLocalRef);
-					}
-					set {
-						if (BOUNDS_ABOVE_jfieldId == IntPtr.Zero)
-							BOUNDS_ABOVE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BOUNDS_ABOVE", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-						IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
-						JNIEnv.SetStaticField (class_ref, BOUNDS_ABOVE_jfieldId, native_value);
-						JNIEnv.DeleteLocalRef (native_value);
-					}
-				}
-
-				static IntPtr BOUNDS_ALL_jfieldId;
-
-				// Metadata.xml XPath field reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/field[@name='BOUNDS_ALL']"
-				[Register ("BOUNDS_ALL")]
-				public static global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type BoundsAll {
-					get {
-						if (BOUNDS_ALL_jfieldId == IntPtr.Zero)
-							BOUNDS_ALL_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BOUNDS_ALL", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-						IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, BOUNDS_ALL_jfieldId);
-						return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type> (__ret, JniHandleOwnership.TransferLocalRef);
-					}
-					set {
-						if (BOUNDS_ALL_jfieldId == IntPtr.Zero)
-							BOUNDS_ALL_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BOUNDS_ALL", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-						IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
-						JNIEnv.SetStaticField (class_ref, BOUNDS_ALL_jfieldId, native_value);
-						JNIEnv.DeleteLocalRef (native_value);
-					}
-				}
-
-				static IntPtr BOUNDS_BELOW_jfieldId;
-
-				// Metadata.xml XPath field reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/field[@name='BOUNDS_BELOW']"
-				[Register ("BOUNDS_BELOW")]
-				public static global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type BoundsBelow {
-					get {
-						if (BOUNDS_BELOW_jfieldId == IntPtr.Zero)
-							BOUNDS_BELOW_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BOUNDS_BELOW", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-						IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, BOUNDS_BELOW_jfieldId);
-						return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type> (__ret, JniHandleOwnership.TransferLocalRef);
-					}
-					set {
-						if (BOUNDS_BELOW_jfieldId == IntPtr.Zero)
-							BOUNDS_BELOW_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BOUNDS_BELOW", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-						IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
-						JNIEnv.SetStaticField (class_ref, BOUNDS_BELOW_jfieldId, native_value);
-						JNIEnv.DeleteLocalRef (native_value);
-					}
-				}
-
-				static IntPtr NONE_jfieldId;
-
-				// Metadata.xml XPath field reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/field[@name='NONE']"
-				[Register ("NONE")]
-				public static global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type None {
-					get {
-						if (NONE_jfieldId == IntPtr.Zero)
-							NONE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "NONE", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-						IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, NONE_jfieldId);
-						return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type> (__ret, JniHandleOwnership.TransferLocalRef);
-					}
-					set {
-						if (NONE_jfieldId == IntPtr.Zero)
-							NONE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "NONE", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-						IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
-						JNIEnv.SetStaticField (class_ref, NONE_jfieldId, native_value);
-						JNIEnv.DeleteLocalRef (native_value);
-					}
-				}
-				internal static IntPtr java_class_handle;
-				internal static IntPtr class_ref {
-					get {
-						return JNIEnv.FindClass ("org/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type", ref java_class_handle);
-					}
-				}
-
-				protected override IntPtr ThresholdClass {
-					get { return class_ref; }
-				}
-
-				protected override global::System.Type ThresholdType {
-					get { return typeof (Type); }
-				}
-
-				internal Type (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer) {}
-
-				static IntPtr id_valueOf_Ljava_lang_String_;
-				// Metadata.xml XPath method reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/method[@name='valueOf' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
-				[Register ("valueOf", "(Ljava/lang/String;)Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;", "")]
-				public static global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type ValueOf (string p0)
-				{
-					if (id_valueOf_Ljava_lang_String_ == IntPtr.Zero)
-						id_valueOf_Ljava_lang_String_ = JNIEnv.GetStaticMethodID (class_ref, "valueOf", "(Ljava/lang/String;)Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-					IntPtr native_p0 = JNIEnv.NewString (p0);
-					global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type __ret = global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type> (JNIEnv.CallStaticObjectMethod  (class_ref, id_valueOf_Ljava_lang_String_, new JValue (native_p0)), JniHandleOwnership.TransferLocalRef);
-					JNIEnv.DeleteLocalRef (native_p0);
-					return __ret;
-				}
-
-				static IntPtr id_values;
-				// Metadata.xml XPath method reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/method[@name='values' and count(parameter)=0]"
-				[Register ("values", "()[Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;", "")]
-				public static global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type[] Values ()
-				{
-					if (id_values == IntPtr.Zero)
-						id_values = JNIEnv.GetStaticMethodID (class_ref, "values", "()[Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-					return (global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type[]) JNIEnv.GetArray (JNIEnv.CallStaticObjectMethod  (class_ref, id_values), JniHandleOwnership.TransferLocalRef, typeof (global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type));
-				}
-
 			}
 
+			static IntPtr BELOW_jfieldId;
+
+			// Metadata.xml XPath field reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/field[@name='BELOW']"
+			[Register ("BELOW")]
+			public static global::Org.Achartengine.Renderer.XYSeriesRenderer.Type Below {
+				get {
+					if (BELOW_jfieldId == IntPtr.Zero)
+						BELOW_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BELOW", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+					IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, BELOW_jfieldId);
+					return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.Type> (__ret, JniHandleOwnership.TransferLocalRef);
+				}
+				set {
+					if (BELOW_jfieldId == IntPtr.Zero)
+						BELOW_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BELOW", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+					IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
+					JNIEnv.SetStaticField (class_ref, BELOW_jfieldId, native_value);
+					JNIEnv.DeleteLocalRef (native_value);
+				}
+			}
+
+			static IntPtr BOUNDS_ABOVE_jfieldId;
+
+			// Metadata.xml XPath field reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/field[@name='BOUNDS_ABOVE']"
+			[Register ("BOUNDS_ABOVE")]
+			public static global::Org.Achartengine.Renderer.XYSeriesRenderer.Type BoundsAbove {
+				get {
+					if (BOUNDS_ABOVE_jfieldId == IntPtr.Zero)
+						BOUNDS_ABOVE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BOUNDS_ABOVE", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+					IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, BOUNDS_ABOVE_jfieldId);
+					return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.Type> (__ret, JniHandleOwnership.TransferLocalRef);
+				}
+				set {
+					if (BOUNDS_ABOVE_jfieldId == IntPtr.Zero)
+						BOUNDS_ABOVE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BOUNDS_ABOVE", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+					IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
+					JNIEnv.SetStaticField (class_ref, BOUNDS_ABOVE_jfieldId, native_value);
+					JNIEnv.DeleteLocalRef (native_value);
+				}
+			}
+
+			static IntPtr BOUNDS_ALL_jfieldId;
+
+			// Metadata.xml XPath field reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/field[@name='BOUNDS_ALL']"
+			[Register ("BOUNDS_ALL")]
+			public static global::Org.Achartengine.Renderer.XYSeriesRenderer.Type BoundsAll {
+				get {
+					if (BOUNDS_ALL_jfieldId == IntPtr.Zero)
+						BOUNDS_ALL_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BOUNDS_ALL", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+					IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, BOUNDS_ALL_jfieldId);
+					return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.Type> (__ret, JniHandleOwnership.TransferLocalRef);
+				}
+				set {
+					if (BOUNDS_ALL_jfieldId == IntPtr.Zero)
+						BOUNDS_ALL_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BOUNDS_ALL", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+					IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
+					JNIEnv.SetStaticField (class_ref, BOUNDS_ALL_jfieldId, native_value);
+					JNIEnv.DeleteLocalRef (native_value);
+				}
+			}
+
+			static IntPtr BOUNDS_BELOW_jfieldId;
+
+			// Metadata.xml XPath field reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/field[@name='BOUNDS_BELOW']"
+			[Register ("BOUNDS_BELOW")]
+			public static global::Org.Achartengine.Renderer.XYSeriesRenderer.Type BoundsBelow {
+				get {
+					if (BOUNDS_BELOW_jfieldId == IntPtr.Zero)
+						BOUNDS_BELOW_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BOUNDS_BELOW", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+					IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, BOUNDS_BELOW_jfieldId);
+					return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.Type> (__ret, JniHandleOwnership.TransferLocalRef);
+				}
+				set {
+					if (BOUNDS_BELOW_jfieldId == IntPtr.Zero)
+						BOUNDS_BELOW_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "BOUNDS_BELOW", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+					IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
+					JNIEnv.SetStaticField (class_ref, BOUNDS_BELOW_jfieldId, native_value);
+					JNIEnv.DeleteLocalRef (native_value);
+				}
+			}
+
+			static IntPtr NONE_jfieldId;
+
+			// Metadata.xml XPath field reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/field[@name='NONE']"
+			[Register ("NONE")]
+			public static global::Org.Achartengine.Renderer.XYSeriesRenderer.Type None {
+				get {
+					if (NONE_jfieldId == IntPtr.Zero)
+						NONE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "NONE", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+					IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, NONE_jfieldId);
+					return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.Type> (__ret, JniHandleOwnership.TransferLocalRef);
+				}
+				set {
+					if (NONE_jfieldId == IntPtr.Zero)
+						NONE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "NONE", "Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+					IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
+					JNIEnv.SetStaticField (class_ref, NONE_jfieldId, native_value);
+					JNIEnv.DeleteLocalRef (native_value);
+				}
+			}
 			internal static IntPtr java_class_handle;
 			internal static IntPtr class_ref {
 				get {
-					return JNIEnv.FindClass ("org/achartengine/renderer/XYSeriesRenderer$FillOutsideLine", ref java_class_handle);
+					return JNIEnv.FindClass ("org/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type", ref java_class_handle);
 				}
 			}
 
@@ -190,190 +144,32 @@ namespace Org.Achartengine.Renderer {
 			}
 
 			protected override global::System.Type ThresholdType {
-				get { return typeof (FillOutsideLine); }
+				get { return typeof (Type); }
 			}
 
-			protected FillOutsideLine (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer) {}
+			internal Type (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer) {}
 
-			static IntPtr id_ctor_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_Type_;
-			// Metadata.xml XPath constructor reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine']/constructor[@name='XYSeriesRenderer.FillOutsideLine' and count(parameter)=1 and parameter[1][@type='org.achartengine.renderer.XYSeriesRenderer.FillOutsideLine.Type']]"
-			[Register (".ctor", "(Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;)V", "")]
-			public FillOutsideLine (global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type p0) : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
+			static IntPtr id_valueOf_Ljava_lang_String_;
+			// Metadata.xml XPath method reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/method[@name='valueOf' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+			[Register ("valueOf", "(Ljava/lang/String;)Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;", "")]
+			public static global::Org.Achartengine.Renderer.XYSeriesRenderer.Type ValueOf (string p0)
 			{
-				if (Handle != IntPtr.Zero)
-					return;
-
-				if (GetType () != typeof (FillOutsideLine)) {
-					SetHandle (
-							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;)V", new JValue (p0)),
-							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;)V", new JValue (p0));
-					return;
-				}
-
-				if (id_ctor_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_Type_ == IntPtr.Zero)
-					id_ctor_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_Type_ = JNIEnv.GetMethodID (class_ref, "<init>", "(Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;)V");
-				SetHandle (
-						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_Type_, new JValue (p0)),
-						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_Type_, new JValue (p0));
+				if (id_valueOf_Ljava_lang_String_ == IntPtr.Zero)
+					id_valueOf_Ljava_lang_String_ = JNIEnv.GetStaticMethodID (class_ref, "valueOf", "(Ljava/lang/String;)Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+				IntPtr native_p0 = JNIEnv.NewString (p0);
+				global::Org.Achartengine.Renderer.XYSeriesRenderer.Type __ret = global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.Type> (JNIEnv.CallStaticObjectMethod  (class_ref, id_valueOf_Ljava_lang_String_, new JValue (native_p0)), JniHandleOwnership.TransferLocalRef);
+				JNIEnv.DeleteLocalRef (native_p0);
+				return __ret;
 			}
 
-			static Delegate cb_getColor;
-#pragma warning disable 0169
-			static Delegate GetGetColorHandler ()
+			static IntPtr id_values;
+			// Metadata.xml XPath method reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine.Type']/method[@name='values' and count(parameter)=0]"
+			[Register ("values", "()[Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;", "")]
+			public static global::Org.Achartengine.Renderer.XYSeriesRenderer.Type[] Values ()
 			{
-				if (cb_getColor == null)
-					cb_getColor = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, int>) n_GetColor);
-				return cb_getColor;
-			}
-
-			static int n_GetColor (IntPtr jnienv, IntPtr native__this)
-			{
-				global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine __this = global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-				return __this.Color;
-			}
-#pragma warning restore 0169
-
-			static Delegate cb_setColor_I;
-#pragma warning disable 0169
-			static Delegate GetSetColor_IHandler ()
-			{
-				if (cb_setColor_I == null)
-					cb_setColor_I = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, int>) n_SetColor_I);
-				return cb_setColor_I;
-			}
-
-			static void n_SetColor_I (IntPtr jnienv, IntPtr native__this, int p0)
-			{
-				global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine __this = global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-				__this.Color = p0;
-			}
-#pragma warning restore 0169
-
-			static IntPtr id_getColor;
-			static IntPtr id_setColor_I;
-			public virtual int Color {
-				// Metadata.xml XPath method reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine']/method[@name='getColor' and count(parameter)=0]"
-				[Register ("getColor", "()I", "GetGetColorHandler")]
-				get {
-					if (id_getColor == IntPtr.Zero)
-						id_getColor = JNIEnv.GetMethodID (class_ref, "getColor", "()I");
-
-					if (GetType () == ThresholdType)
-						return JNIEnv.CallIntMethod  (Handle, id_getColor);
-					else
-						return JNIEnv.CallNonvirtualIntMethod  (Handle, ThresholdClass, id_getColor);
-				}
-				// Metadata.xml XPath method reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine']/method[@name='setColor' and count(parameter)=1 and parameter[1][@type='int']]"
-				[Register ("setColor", "(I)V", "GetSetColor_IHandler")]
-				set {
-					if (id_setColor_I == IntPtr.Zero)
-						id_setColor_I = JNIEnv.GetMethodID (class_ref, "setColor", "(I)V");
-
-					if (GetType () == ThresholdType)
-						JNIEnv.CallVoidMethod  (Handle, id_setColor_I, new JValue (value));
-					else
-						JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, id_setColor_I, new JValue (value));
-				}
-			}
-
-			static Delegate cb_getFillRange;
-#pragma warning disable 0169
-			static Delegate GetGetFillRangeHandler ()
-			{
-				if (cb_getFillRange == null)
-					cb_getFillRange = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_GetFillRange);
-				return cb_getFillRange;
-			}
-
-			static IntPtr n_GetFillRange (IntPtr jnienv, IntPtr native__this)
-			{
-				global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine __this = global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-				return JNIEnv.NewArray (__this.GetFillRange ());
-			}
-#pragma warning restore 0169
-
-			static IntPtr id_getFillRange;
-			// Metadata.xml XPath method reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine']/method[@name='getFillRange' and count(parameter)=0]"
-			[Register ("getFillRange", "()[I", "GetGetFillRangeHandler")]
-			public virtual int[] GetFillRange ()
-			{
-				if (id_getFillRange == IntPtr.Zero)
-					id_getFillRange = JNIEnv.GetMethodID (class_ref, "getFillRange", "()[I");
-
-				if (GetType () == ThresholdType)
-					return (int[]) JNIEnv.GetArray (JNIEnv.CallObjectMethod  (Handle, id_getFillRange), JniHandleOwnership.TransferLocalRef, typeof (int));
-				else
-					return (int[]) JNIEnv.GetArray (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_getFillRange), JniHandleOwnership.TransferLocalRef, typeof (int));
-			}
-
-			static Delegate cb_getType;
-#pragma warning disable 0169
-			static Delegate GetGetTypeHandler ()
-			{
-				if (cb_getType == null)
-					cb_getType = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_GetType);
-				return cb_getType;
-			}
-
-			static IntPtr n_GetType (IntPtr jnienv, IntPtr native__this)
-			{
-				global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine __this = global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-				return JNIEnv.ToLocalJniHandle (__this.GetType ());
-			}
-#pragma warning restore 0169
-
-			static IntPtr id_getType;
-			// Metadata.xml XPath method reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine']/method[@name='getType' and count(parameter)=0]"
-			[Register ("getType", "()Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;", "GetGetTypeHandler")]
-			public virtual global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type GetType ()
-			{
-				if (id_getType == IntPtr.Zero)
-					id_getType = JNIEnv.GetMethodID (class_ref, "getType", "()Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
-
-				if (GetType () == ThresholdType)
-					return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type> (JNIEnv.CallObjectMethod  (Handle, id_getType), JniHandleOwnership.TransferLocalRef);
-				else
-					return global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine.Type> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_getType), JniHandleOwnership.TransferLocalRef);
-			}
-
-			static Delegate cb_setFillRange_arrayI;
-#pragma warning disable 0169
-			static Delegate GetSetFillRange_arrayIHandler ()
-			{
-				if (cb_setFillRange_arrayI == null)
-					cb_setFillRange_arrayI = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_SetFillRange_arrayI);
-				return cb_setFillRange_arrayI;
-			}
-
-			static void n_SetFillRange_arrayI (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
-			{
-				global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine __this = global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-				int[] p0 = (int[]) JNIEnv.GetArray (native_p0, JniHandleOwnership.DoNotTransfer, typeof (int));
-				__this.SetFillRange (p0);
-				if (p0 != null)
-					JNIEnv.CopyArray (p0, native_p0);
-			}
-#pragma warning restore 0169
-
-			static IntPtr id_setFillRange_arrayI;
-			// Metadata.xml XPath method reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer.FillOutsideLine']/method[@name='setFillRange' and count(parameter)=1 and parameter[1][@type='int[]']]"
-			[Register ("setFillRange", "([I)V", "GetSetFillRange_arrayIHandler")]
-			public virtual void SetFillRange (int[] p0)
-			{
-				if (id_setFillRange_arrayI == IntPtr.Zero)
-					id_setFillRange_arrayI = JNIEnv.GetMethodID (class_ref, "setFillRange", "([I)V");
-				IntPtr native_p0 = JNIEnv.NewArray (p0);
-
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setFillRange_arrayI, new JValue (native_p0));
-				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, id_setFillRange_arrayI, new JValue (native_p0));
-				if (p0 != null) {
-					JNIEnv.CopyArray (native_p0, p0);
-					JNIEnv.DeleteLocalRef (native_p0);
-				}
+				if (id_values == IntPtr.Zero)
+					id_values = JNIEnv.GetStaticMethodID (class_ref, "values", "()[Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type;");
+				return (global::Org.Achartengine.Renderer.XYSeriesRenderer.Type[]) JNIEnv.GetArray (JNIEnv.CallStaticObjectMethod  (class_ref, id_values), JniHandleOwnership.TransferLocalRef, typeof (global::Org.Achartengine.Renderer.XYSeriesRenderer.Type));
 			}
 
 		}
@@ -714,67 +510,6 @@ namespace Org.Achartengine.Renderer {
 				else
 					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, id_setPointStyle_Lorg_achartengine_chart_PointStyle_, new JValue (value));
 			}
-		}
-
-		static Delegate cb_addFillOutsideLine_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_;
-#pragma warning disable 0169
-		static Delegate GetAddFillOutsideLine_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_Handler ()
-		{
-			if (cb_addFillOutsideLine_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_ == null)
-				cb_addFillOutsideLine_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_AddFillOutsideLine_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_);
-			return cb_addFillOutsideLine_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_;
-		}
-
-		static void n_AddFillOutsideLine_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
-		{
-			global::Org.Achartengine.Renderer.XYSeriesRenderer __this = global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine p0 = global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine> (native_p0, JniHandleOwnership.DoNotTransfer);
-			__this.AddFillOutsideLine (p0);
-		}
-#pragma warning restore 0169
-
-		static IntPtr id_addFillOutsideLine_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer']/method[@name='addFillOutsideLine' and count(parameter)=1 and parameter[1][@type='org.achartengine.renderer.XYSeriesRenderer.FillOutsideLine']]"
-		[Register ("addFillOutsideLine", "(Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine;)V", "GetAddFillOutsideLine_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_Handler")]
-		public virtual void AddFillOutsideLine (global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine p0)
-		{
-			if (id_addFillOutsideLine_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_ == IntPtr.Zero)
-				id_addFillOutsideLine_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_ = JNIEnv.GetMethodID (class_ref, "addFillOutsideLine", "(Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine;)V");
-
-			if (GetType () == ThresholdType)
-				JNIEnv.CallVoidMethod  (Handle, id_addFillOutsideLine_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_, new JValue (p0));
-			else
-				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, id_addFillOutsideLine_Lorg_achartengine_renderer_XYSeriesRenderer_FillOutsideLine_, new JValue (p0));
-		}
-
-		static Delegate cb_getFillOutsideLine;
-#pragma warning disable 0169
-		static Delegate GetGetFillOutsideLineHandler ()
-		{
-			if (cb_getFillOutsideLine == null)
-				cb_getFillOutsideLine = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_GetFillOutsideLine);
-			return cb_getFillOutsideLine;
-		}
-
-		static IntPtr n_GetFillOutsideLine (IntPtr jnienv, IntPtr native__this)
-		{
-			global::Org.Achartengine.Renderer.XYSeriesRenderer __this = global::Java.Lang.Object.GetObject<global::Org.Achartengine.Renderer.XYSeriesRenderer> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			return JNIEnv.NewArray (__this.GetFillOutsideLine ());
-		}
-#pragma warning restore 0169
-
-		static IntPtr id_getFillOutsideLine;
-		// Metadata.xml XPath method reference: path="/api/package[@name='org.achartengine.renderer']/class[@name='XYSeriesRenderer']/method[@name='getFillOutsideLine' and count(parameter)=0]"
-		[Register ("getFillOutsideLine", "()[Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine;", "GetGetFillOutsideLineHandler")]
-		public virtual global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine[] GetFillOutsideLine ()
-		{
-			if (id_getFillOutsideLine == IntPtr.Zero)
-				id_getFillOutsideLine = JNIEnv.GetMethodID (class_ref, "getFillOutsideLine", "()[Lorg/achartengine/renderer/XYSeriesRenderer$FillOutsideLine;");
-
-			if (GetType () == ThresholdType)
-				return (global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine[]) JNIEnv.GetArray (JNIEnv.CallObjectMethod  (Handle, id_getFillOutsideLine), JniHandleOwnership.TransferLocalRef, typeof (global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine));
-			else
-				return (global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine[]) JNIEnv.GetArray (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_getFillOutsideLine), JniHandleOwnership.TransferLocalRef, typeof (global::Org.Achartengine.Renderer.XYSeriesRenderer.FillOutsideLine));
 		}
 
 		static Delegate cb_setFillBelowLineColor_I;

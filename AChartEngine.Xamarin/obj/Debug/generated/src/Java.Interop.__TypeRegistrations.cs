@@ -14,8 +14,10 @@ namespace Java.Interop {
 #endif // def MONODROID_TIMING
 			Java.Interop.TypeManager.RegisterPackages (
 					new string[]{
+						"org/achartengine/renderer",
 					},
 					new Converter<string, Type>[]{
+						lookup_org_achartengine_renderer_package,
 					});
 #if MONODROID_TIMING
 			var end = DateTime.Now;
@@ -29,6 +31,18 @@ namespace Java.Interop {
 			if (managedType == null)
 				return null;
 			return Type.GetType (managedType);
+		}
+
+		static string[] package_org_achartengine_renderer_mappings;
+		static Type lookup_org_achartengine_renderer_package (string klass)
+		{
+			if (package_org_achartengine_renderer_mappings == null) {
+				package_org_achartengine_renderer_mappings = new string[]{
+					"org/achartengine/renderer/XYSeriesRenderer$FillOutsideLine$Type:Org.Achartengine.Renderer.XYSeriesRenderer/Type",
+				};
+			}
+
+			return Lookup (package_org_achartengine_renderer_mappings, klass);
 		}
 	}
 }
